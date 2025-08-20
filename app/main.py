@@ -5,7 +5,7 @@ import re
 app = FastAPI()
 
 class CodeInput(BaseModel):
-    code: str
+    text: str
 
 def clean_abap_code(code: str) -> str:
     cleaned_lines = []
